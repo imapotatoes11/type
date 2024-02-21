@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var texthex = document.querySelector('#texthex')
     var textcss = document.querySelector('#textcss')
 
+    // give it a not dogsh- default color
+    colorPicker.value = '#fff0ff'
+
     // only need to call one
     updatePicker()
 
@@ -35,6 +38,7 @@ function updatePicker() {
     textcss.textContent = 'rgb(' + r + ', ' + g + ', ' + b + ');'
 
     document.querySelector('#color').style.backgroundColor = color
+    document.body.style.backgroundColor = color
 }
 function updateRGB() {
     var color = textrgb.value
@@ -49,6 +53,7 @@ function updateRGB() {
     colorPicker.value = '#' + parseInt(r).toString(16) + parseInt(g).toString(16) + parseInt(b).toString(16)
 
     document.querySelector('#color').style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')'
+    document.body.style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')'
 }
 function updateHEX() {
     var color = texthex.value
@@ -63,6 +68,7 @@ function updateHEX() {
     colorPicker.value = color
 
     document.querySelector('#color').style.backgroundColor = color
+    document.body.style.backgroundColor = color
 }
 function updateCSS() {
     var color = textcss.value
@@ -78,6 +84,7 @@ function updateCSS() {
     colorPicker.value = '#' + parseInt(r).toString(16) + parseInt(g).toString(16) + parseInt(b).toString(16)
 
     document.querySelector('#color').style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')'
+    document.body.style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')'
 }
 
 function copyRGB() {
