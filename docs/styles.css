@@ -18,7 +18,7 @@ textarea {
     border: none;
     resize: none;
     margin: 0;
-    background-color: var(--arc-background-gradient-color0);
+    /*background-color: var(--arc-background-gradient-color0);*/
 }
 
 :root {
