@@ -1,0 +1,69 @@
+#mainDiv {
+    padding: 50px;
+    border: 1px solid #bdbdbd;
+    background: #fcfcfc;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: .5em;
+}
+#color {
+    width: var(--color-size);
+    height: var(--color-size);
+    background: var(--color);
+    margin: 0;
+
+    border-radius: 8px;
+}
+#coloro {
+    padding: 2px;
+    border: 2px solid grey;
+    border-radius: 10px;
+
+    width: var(--color-size);
+
+    margin-left: auto; margin-right: auto;
+    margin-bottom: 20px;
+}
+#colorPickerDiv {
+    margin: auto;
+}
+#selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label > textarea {
+    width: 100%;
+    height: 20px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd;
+    resize: none;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+:root {
+    font-family: Helvetica, sans-serif;
+    --color: #000;
+
+    --color-size: 100px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: .2s ease-out;
+}
+button:hover {
+    background: #f0f0f0;
+}

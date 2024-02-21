@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="cp.css">
+    <script src="cp.js"></script>
+</head>
+<body>
+<div id="mainDiv">
+    <div id="coloro"><div id="color"></div></div>
+    <div id="selection">
+        <label for="colorPicker" id="colorPickerDiv"></label><input type="color" id="colorPicker">
+        <p>RGB: <button onclick="copyRGB()">C</button><label><textarea id="textrgb"></textarea></label></p>
+        <p>HEX: <button onclick="copyHEX()">C</button><label><textarea id="texthex"></textarea></label></p>
+        <p>CSS: <button onclick="copyCSS()">C</button><label><textarea id="textcss"></textarea></label></p>
+    </div>
+</div>
+</body>
+</html>
