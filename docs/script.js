@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     var textArea = document.querySelector('textarea');
 
+    // focus cursor on textarea
+    textArea.focus();
+
     textArea.addEventListener('input', function () {
         var value = textArea.value;
 
